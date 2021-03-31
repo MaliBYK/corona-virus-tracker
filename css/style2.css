@@ -1,0 +1,22 @@
+.tableDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.part2 {
+  margin-top: 25%;
+  margin-bottom: 10%;
+  height: 50%;
+}
+
+.statisticsTable1,
+.statisticsTable2 {
+  color: #cf3d42;
+  font-size: 3.5vw;
+  text-align: left;
+}
+
+.firstRow {
+  text-transform: uppercase;
+}

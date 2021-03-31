@@ -3,12 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  width: 100%;
+  height: 100%;
+}
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: #28405c;
   font-family: "Roboto", sans-serif;
+  padding-bottom: 3rem;
+}
+.part1 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -26,7 +32,8 @@
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
-  margin-right: 10vw;
+  margin-right: 5%;
+  margin-top: 10%;
 }
 .selectText {
   /* text-shadow: -2px 2px 0 #d1d1d1; */
@@ -43,6 +50,10 @@
   font-weight: bold;
   text-align: center;
   padding-left: 2rem;
+}
+.selectSelect:hover,
+.selectSelect:active {
+  outline: none;
 }
 .selectSelect option {
   font-size: 1em;
@@ -114,4 +125,9 @@
 
 .selectButton:hover {
   background-color: rgb(233, 229, 229);
+}
+
+.selectButton a {
+  text-decoration: none;
+  color: #cf3d42;
 }
