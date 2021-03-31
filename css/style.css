@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #28405c;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.mainTitle {
+  color: #cf3d42;
+
+  font-size: 10vw;
+  /* text-shadow: -6px 6px 0 #d1d1d1; */
+  margin-left: 10vw;
+}
+
+.selectDiv {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  margin-right: 10vw;
+}
+.selectText {
+  /* text-shadow: -2px 2px 0 #d1d1d1; */
+  margin-right: 2rem;
+  color: #cf3d42;
+  font-size: 3vw;
+}
+
+.selectSelect {
+  flex-grow: 6;
+  background-color: #fff;
+  color: #cf3d42;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 2rem;
+}
+.selectSelect option {
+  font-size: 1em;
+  background-color: #fff;
+  color: #cf3d42;
+  font-weight: bold;
+}
+.selectButton {
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  height: 4rem;
+  background-color: #fff;
+  border: none;
+  color: #cf3d42;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: -6px 6px 0 #a9b3be;
+}
+
+.selectButton:focus {
+  outline: none;
+}
+
+.selectButton::after {
+  content: "";
+  height: 0;
+  width: 0;
+
+  border: 6px solid transparent;
+  border-top-color: #a9b3be;
+  border-bottom-width: 0;
+
+  position: absolute;
+  display: block;
+  bottom: -6px;
+  right: 0;
+}
+
+.selectButton::before {
+  content: "";
+  height: 0;
+  width: 0;
+
+  border: 6px solid transparent;
+  border-right-color: #a9b3be;
+  border-left-width: 0;
+
+  position: absolute;
+  display: block;
+  left: -6px;
+  top: 0;
+}
+
+.selectButton:active {
+  left: -3px;
+  bottom: -3px;
+  box-shadow: -3px 3px 0 #a9b3be;
+}
+
+.selectButton:active::after {
+  border-width: 3px;
+}
+
+.selectButton:active::before {
+  border-width: 3px;
+}
+
+.selectButton:hover {
+  background-color: rgb(233, 229, 229);
+}
