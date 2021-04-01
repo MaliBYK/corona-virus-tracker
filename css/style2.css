@@ -7,7 +7,7 @@
 .part2 {
   margin-top: 25%;
   margin-bottom: 10%;
-  height: 50%;
+  height: 40%;
 }
 
 .statisticsTable1,
@@ -15,8 +15,19 @@
   color: #cf3d42;
   font-size: 3.5vw;
   text-align: left;
+
+  padding: 1rem;
 }
 
 .firstRow {
   text-transform: uppercase;
+}
+
+.statisticsTable1 tr td,
+.statisticsTable2 tr td {
+  color: #fff;
+}
+
+tr {
+  margin-bottom: 3rem;
 }

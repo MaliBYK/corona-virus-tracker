@@ -3,7 +3,7 @@ class Tracker {
     return new Promise(function (resolve, reject) {
       fetch(`https://corona-api.com/countries/${countryCode}`)
         .then(response => response.json())
-        .then(data => resolve(data.data.timeline[0]))
+        .then(data => resolve(data.data))
         .catch(err => reject(new Error(err)));
     });
   }
