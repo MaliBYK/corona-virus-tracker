@@ -73,6 +73,9 @@ html {
   text-align: center;
   font-weight: bold;
   box-shadow: -6px 6px 0 #a9b3be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .selectButton:focus {
@@ -127,7 +130,7 @@ html {
   background-color: rgb(233, 229, 229);
 }
 
-.selectButton a {
+.selectButton {
   text-decoration: none;
   color: #cf3d42;
 }

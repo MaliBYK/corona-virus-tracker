@@ -12,9 +12,7 @@ class UI {
   }
   static changeStatisticsInUI(data) {
     console.log(data);
-    document.querySelector(".countryName").textContent = document.querySelector(
-      ".selectSelect"
-    ).value;
+    document.querySelector(".countryName").textContent = data.code;
     document.querySelector(".totalDeaths").textContent =
       data.timeline[0].deaths;
     document.querySelector(".totalRecovered").textContent =
